@@ -1,1 +1,2 @@
-# DATA-6200-Project-2-
+# Car Cooperators Insurance Prediction 
+Data Science - Classification Project 
