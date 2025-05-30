@@ -1,13 +1,54 @@
-# Car Cooperators Insurance Prediction 
-Data Science - Classification Project 
+# Car Insurance Premium Prediction
 
-The project aims to predict whether the client will buy Insurance or not i.e. predicting ‘IS_BOUND” 
-variable in our dataset. To help us with our predictions we will train two models Logistic Regression 
-and Random Forest and predict them on test dataset.  
-After comparing, Random Forest outperforms Logistic Regression in several key areas, including 
-higher accuracy (78% vs. 51%) and AUC score (0.65 vs. 0.64), indicating better overall classification 
-and differentiation between the classes. While Random Forest has a higher false negative rate (39% 
-vs. 36%), it compensates with a lower false positive rate (40% vs. 44%) and generates more advertising 
-revenue (16 vs. 15). Despite its recall being zero, its stronger metrics make Random Forest the superior 
-choice, particularly when prioritizing overall accuracy and AUC score over minimizing false 
-negatives.  
+## Overview
+This project focuses on building a **machine learning model** to predict **car insurance premiums** based on customer and vehicle-related features. The aim is to assist insurance companies in pricing policies more accurately, manage risk better, and streamline the underwriting process.
+
+---
+
+## Problem Statement
+Predict the **insurance premium** amount for individual policyholders using customer demographics, vehicle characteristics, and claim history.
+
+
+## Features
+- **Predictive Modeling**: Supervised learning models to predict premium amounts.
+-  **Data Preprocessing**: Handling missing values, feature engineering, and scaling.
+-  **Model Evaluation**: Compare model performances using appropriate regression metrics.
+-  **Data Visualization**: Explore data distributions, correlations, and feature importance.
+- **Pipeline Ready**: Clean code structure with reproducible pipelines.
+
+
+
+## Tech Stack
+- **Python 3.x**
+- **Pandas**, **NumPy** (Data Manipulation)
+- **Scikit-Learn** (Machine Learning Models)
+- **Matplotlib**, **Seaborn** (Visualization)
+- **XGBoost** / **LightGBM** (Advanced Models)
+- **Jupyter Notebook** (Exploratory Data Analysis and Model Training)
+
+
+## Data Science Workflow
+- Load and explore the dataset
+- Handle missing values and perform data cleaning
+- Feature engineering (encoding categorical features, scaling numerical ones)
+- Model building:
+  - Linear Regression
+  - Random Forest Regressor
+  - Gradient Boosting (XGBoost / LightGBM)
+- Hyperparameter tuning (Grid Search / Randomized Search)
+- Model evaluation using RMSE, MAE, and R² metrics
+
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/avic7/Car-Cooperators-Insurance-Prediction-.git
+cd Car-Cooperators-Insurance-Prediction-
+
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install dependencies
+pip install -r requirements.txt
